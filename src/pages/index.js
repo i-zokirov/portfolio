@@ -1,23 +1,23 @@
-import AnimatedText from "@/components/AnimatedText";
-import { HireMe } from "@/components/HireMe";
-import { LinkArrow } from "@/components/Icons";
-import Layout from "@/components/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
-import TransitionEffect from "@/components/TransitionEffect";
-
+import AnimatedText from "@/components/AnimatedText"
+import { HireMe } from "@/components/HireMe"
+import { LinkArrow } from "@/components/Icons"
+import Layout from "@/components/Layout"
+import TransitionEffect from "@/components/TransitionEffect"
+import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
+import profilePic from "../../public/images/profile/developer-pic-1.png"
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 
 export default function Home() {
-  
   return (
     <>
       <Head>
         <title>Ikboljon Zokirov</title>
-        <meta name="description"
-    content="Ikboljon Zokirov | Full-stack Developer. \nMy skills in using JavaScript/Typescript and its various frameworks and libraries, allow me to create highly functional and visually appealing web applications and I am excited to share my portfolio with you." />
+        <meta
+          name="description"
+          content="Ikboljon Zokirov | Full-stack Developer. \nMy skills in using JavaScript/Typescript and its various frameworks and libraries, allow me to create highly functional and visually appealing web applications and I am excited to share my portfolio with you."
+        />
       </Head>
 
       <TransitionEffect />
@@ -40,15 +40,19 @@ export default function Home() {
                 text="Crafting Digital Experiences."
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-                <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-                 As a skilled Full-Stack Developer, I bring robust solutions to life, integrating sophisticated design with cutting-edge technology. Dive into my diverse portfolio, where each project narrates a story of innovation and precision. Let&apos;s connect and create the next breakthrough in web technology together.
-                </p>
+              <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
+                As a skilled Full-Stack Developer, I bring robust solutions to
+                life, integrating sophisticated design with cutting-edge
+                technology. Dive into my diverse portfolio, where each project
+                narrates a story of innovation and precision. Let&apos;s connect
+                and create the next breakthrough in web technology together.
+              </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
                   // }}
-                  href="/dummy.pdf"
+                  href="/Ikboljon_Zokirov_CV.pdf"
                   target={"_blank"}
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
@@ -61,7 +65,7 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="mailto:codebucks27@gmail.com"
+                  href="mailto:izokirov@outlook.com?subject=Hello Ikboljon!"
                   className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
                 >
@@ -82,5 +86,5 @@ export default function Home() {
         </div>
       </article>
     </>
-  );
+  )
 }

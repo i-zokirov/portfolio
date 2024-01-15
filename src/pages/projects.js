@@ -1,22 +1,21 @@
-import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
-import Layout from "@/components/Layout";
-import { motion } from "framer-motion";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import proj6 from "../../public/images/projects/devdreaming.jpg";
-import TransitionEffect from "@/components/TransitionEffect";
+import AnimatedText from "@/components/AnimatedText"
+import { GithubIcon } from "@/components/Icons"
+import Layout from "@/components/Layout"
+import TransitionEffect from "@/components/TransitionEffect"
+import { motion } from "framer-motion"
+import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
+import doraswellness from "../../public/images/projects/adioraswellness.png"
+import crm from "../../public/images/projects/crm.png"
+import dontrans from "../../public/images/projects/dontransllc.png"
+import livechat from "../../public/images/projects/livechat.png"
+import protechgear from "../../public/images/projects/protechgear.jpg"
+import taskboard from "../../public/images/projects/taskboard.png"
 
-const FramerImage = motion(Image);
+const FramerImage = motion(Image)
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
-
   return (
     <article
       className="relative flex w-full items-center  justify-between rounded-3xl rounded-br-2xl border
@@ -86,11 +85,10 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
         </div>
       </div>
     </article>
-  );
-};
+  )
+}
 
 const Project = ({ title, type, img, link, github }) => {
-
   return (
     <article
       className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
@@ -156,18 +154,17 @@ const Project = ({ title, type, img, link, github }) => {
         </div>
       </div>
     </article>
-  );
-};
+  )
+}
 
 export default function Projects() {
   return (
     <>
       <Head>
-        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
+        <title>Ikboljon Zokirov | Projects Page</title>
         <meta
           name="description"
-          content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
-        expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
+          content="Discover the innovative projects by Ikboljon Zokirov, showcasing a portfolio of full-stack development, cloud solutions, and UI/UX design. Explore real-world applications, technical details, and project insights."
         />
       </Head>
 
@@ -184,62 +181,63 @@ export default function Projects() {
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                img={proj1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                title="NFT collection Website"
-                img={proj2}
-                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
+                title="Adioras Wellness Massage Studio CRM System"
+                summary="Adioras Wellness Massage Studio CRM System is a web application built using React, React-Query, Material UI, Nestjs.js, MongoDB, and Socket.io written in Typescript. It is a CRM system that helps you to manage your clients, appointments, and services."
+                img={crm}
+                link="https://crm.adioraswellness.com/"
+                github="#"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website"
-                title="Fashion Studio Website"
-                img={proj3}
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                title="Dontrans LLC"
+                img={dontrans}
+                link="https://dontransllc.com/"
+                github="#"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website"
+                title="Adioras Wellness Massage Studio"
+                img={doraswellness}
+                link="https://adioraswellness.com/"
+                github="#"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Portfolio Website"
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                img={proj4}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/codebucks27/react-portfolio-final"
+                type="SAAS Application"
+                title="Taskboard Application"
+                summary="
+                Taskboard is a SAAS application built using React, Redux, Material UI, Node.js, Express.js, MongoDB, and Socket.io. It is a project management tool that helps you to manage your tasks, projects, and teams."
+                img={taskboard}
+                link="https://taskboard-mchv.onrender.com/"
+                github="https://github.com/i-zokirov/taskboard"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website Template"
-                img={proj5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                type="Chat Application (Realtime)"
+                img={livechat}
+                title="Live Chat Application"
+                link="https://livechat-j3wn.onrender.com/"
+                github="https://github.com/i-zokirov/live-chat"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Blog Website"
-                img={proj6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
+                type="Ecormmerce Website"
+                img={protechgear}
+                title="ProTechGear Ecommerce Website"
+                link="https://protechgear.onrender.com"
+                github="https://github.com/i-zokirov/protechgear"
               />
             </div>
           </div>
         </Layout>
       </main>
     </>
-  );
+  )
 }
