@@ -1,30 +1,21 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
-import TransitionEffect from "@/components/TransitionEffect";
-import Head from "next/head";
-import Link from "next/link";
-import React from "react";
+import AnimatedText from "@/components/AnimatedText"
+import Layout from "@/components/Layout"
+import TransitionEffect from "@/components/TransitionEffect"
+import Head from "next/head"
+import Link from "next/link"
 
 const NotFound = () => {
   return (
     <>
       <Head>
-        <title>Awesome Portfolio Built with Nextjs | 404 Page </title>
-        <meta
-          name="description"
-          content="Explore CodeBucks's Next.js developer portfolio and 
-        discover the latest webapp projects and software engineering articles. 
-        Showcase your skills as a full-stack developer and software engineer."
-        />
+        <title>Ikboljon Zokirov | 404 Page </title>
+        <meta name="description" content="Nothing to see here." />
       </Head>
       <TransitionEffect />
       <main className="h-[75vh] w-full dark:bg-dark ">
         <Layout className="relative !bg-transparent !pt-16 flex flex-col items-center justify-center">
           <AnimatedText text="404" className=" " />
-          <AnimatedText
-            text="Page Not Found."
-            className=" !text-7xl "
-          />
+          <AnimatedText text="Page Not Found." className=" !text-7xl " />
           <Link
             href="/"
             className="self-center !mt-4 inline-block rounded-lg border-2 border-solid bg-dark px-4 py-2
@@ -37,7 +28,7 @@ const NotFound = () => {
         </Layout>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default NotFound;
+export default NotFound

@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
 
         <a
-          href="mailto:izokirov@outlook.com?subject=Hello Ikboljon!"
+          href="https://t.me/ikboljondev"
           target="_blank"
           className="underline underline-offset-2"
         >

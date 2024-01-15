@@ -6,7 +6,7 @@ import TransitionEffect from "@/components/TransitionEffect"
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
-import profilePic from "../../public/images/profile/developer-pic-1.png"
+import profile from "../../public/images/profile/profile.jpg"
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
 
 export default function Home() {
@@ -26,15 +26,37 @@ export default function Home() {
       >
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
           <div className="flex w-full items-start justify-between md:flex-col">
-            <div className="w-1/2 lg:hidden md:inline-block md:w-full">
+            {/* <div className="w-1/2 lg:hidden md:inline-block md:w-full">
               <Image
                 src={profilePic}
-                alt="CodeBucks"
+                alt="Ikboljon Zokirov"
                 className="h-auto w-full"
                 sizes="100vw"
                 priority
               />
+            </div> */}
+            <div
+              className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
+            bg-light p-8 dark:border-light dark:bg-dark
+            xl:col-span-4 md:col-span-8 md:order-1
+            "
+            >
+              <div
+                className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%]  rounded-[2rem] rounded-br-3xl 
+                bg-dark
+        dark:bg-light  "
+              />
+              <Image
+                className="h-auto w-full rounded-2xl"
+                src={profile}
+                alt="Ikboljon Zokirov"
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                priority
+              />
             </div>
+
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Crafting Digital Experiences."
@@ -65,7 +87,7 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="mailto:izokirov@outlook.com?subject=Hello Ikboljon!"
+                  href="https://t.me/ikboljondev"
                   className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
                 >
@@ -81,7 +103,7 @@ export default function Home() {
           <Image
             className="relative h-auto w-full"
             src={lightBulb}
-            alt="Codebucks"
+            alt="Ikboljon Zokirov"
           />
         </div>
       </article>
