@@ -12,6 +12,7 @@ import dontrans from "../../public/images/projects/dontransllc.png"
 import livechat from "../../public/images/projects/livechat.png"
 import protechgear from "../../public/images/projects/protechgear.jpg"
 import taskboard from "../../public/images/projects/taskboard.png"
+import tms from "../../public/images/projects/tms.jpg"
 
 const FramerImage = motion(Image)
 
@@ -178,6 +179,16 @@ export default function Projects() {
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Featured Project"
+                title="TMS - Trucking Management System"
+                summary="TMS is a web application built using React, React-Query, Material UI, Nestjs.js, MongoDB, and Socket.io written in Typescript. It is a trucking management system that helps you to manage your drivers, dispatchers and their shifts, trucks, loads, accountancy, business analysis and more."
+                img={tms}
+                link="https://tmspro-demo.vercel.app/"
+                github="#"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
